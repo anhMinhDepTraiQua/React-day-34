@@ -3,9 +3,10 @@ import HomePage from "./pages/HomePage";
 import PostDetailPage from "./pages/PostDetailPage";
 import ProfilePage from "./pages/ProfilePage";
 import Navigation from "./components/Navigation";
+
 function App() {
   return (
-    <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.DEV ? "/" : "/React-day-34"}>
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />

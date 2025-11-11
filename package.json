@@ -2,6 +2,7 @@
   "name": "packge.json",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://anhminhdeptraiqua.github.io/React-day-34",
   "type": "module",
   "scripts": {
     "dev": "vite",
