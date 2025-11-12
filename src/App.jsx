@@ -3,15 +3,23 @@ import HomePage from "./pages/HomePage";
 import PostDetailPage from "./pages/PostDetailPage";
 import ProfilePage from "./pages/ProfilePage";
 import Navigation from "./components/Navigation";
-
+import ActivityPage from "./pages/ActivityPage";
+import FollowingPage from "./pages/FollowingPage";
+import GhostPostPage from "./pages/GhostPostsPage";
+import SearchPage from "./pages/SearchPage";
 function App() {
   return (
-  <BrowserRouter basename={import.meta.env.DEV ? "/" : "/React-day-34"}>
+  <BrowserRouter basename="/React-day-34">
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/post/:id" element={<PostDetailPage />} />
-        <Route path="/profile/:username" element={<ProfilePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/ActivityPage" element={<ActivityPage />} />
+        <Route path="/FollowingPage" element={<FollowingPage />} />
+        <Route path="/GhostPostPage" element={<GhostPostPage />} />
+        <Route path="/SearchPage" element={<SearchPage />} />
+
       </Routes>
     </BrowserRouter>
   );

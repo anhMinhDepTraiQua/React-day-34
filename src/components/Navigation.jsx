@@ -13,9 +13,22 @@ const Navigation = () => {
         <NavLink to="/" className={linkClass}>
           Home
         </NavLink>
+        <NavLink to="/ActivityPage" className={linkClass}>
+          ActivityPage
+        </NavLink>
+        <NavLink to="/FollowingPage" className={linkClass}>
+          FollowingPage
+        </NavLink>
+        <NavLink to="/GhostPostPage" className={linkClass}>
+          GhostPostPage
+        </NavLink>
+        <NavLink to="/SearchPage" className={linkClass}>
+          SearchPage
+        </NavLink>
         <NavLink to="/profile/:username" className={linkClass}>
           Profile
         </NavLink>
+
       </div>
     </nav>
   );

@@ -1,10 +1,17 @@
-import Navigation from "../components/Navigation";
 
+const DefaultLayout = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Header */}
+      <Header />
 
-
-
-function DefaultLayout (){
-
-}
+      {/* Main Content */}
+      <Outlet />
+    
+      {/* Bottom Navigation */}
+      <Navigation />
+    </div>
+  );
+};
 
 export default DefaultLayout;

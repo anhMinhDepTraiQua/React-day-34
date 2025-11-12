@@ -15,7 +15,6 @@ const PostDetailPage = () => {
       try {
         const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
         const data = await res.json();
-        console.log("Post:", data);
         setPost(data);
       } catch (err) {
         console.error("Lỗi khi fetch post:", err);
